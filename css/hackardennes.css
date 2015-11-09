@@ -1,0 +1,72 @@
+/* Video d'accueil */
+.video-section .pattern-overlay {
+/* background-color: rgba(29, 29, 27, 0.5); */
+padding: 110px 0 32px;
+min-height: 496px; 
+height:100%;
+/* Incase of overlay problems just increase the min-height*/
+/* background-clip: border-box; */}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Buenard', serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+.YTPOverlay.raster {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQIW2NkgAJGBgaGzQwMDL4AA/kBA6l7q/MAAAAASUVORK5CYII=);
+}
+/* Fin de la video d'accueil */
+
+/* image de substitution sous la vidéo */
+.intro {
+    background: url(../img/1280px-Château_de_Sedan_pic-023.JPG) no-repeat bottom center scroll;
+    background-size: cover;
+}
+
+/* logo au milieu de l'accueil */
+.logo-heading {
+    width: 70%;
+    content: url(../img/g5641.png);
+}
+
+.about-section {
+    width: 100%;
+    color:#000;
+    background-color: #fff;
+}
+
+.thumb {
+    margin-bottom: 30px;
+    min-height:200px ;
+    height:200px; 
+}
+
+
+/* surcharges de flipclock.js */
+
+/* masquage des points de séparation entre les jours et l'heure */
+.flip-clock-divider.hours .flip-clock-dot{
+    visibility: hidden;
+}
+.countdown{zoom:0.5;
+    /* display: inline-flex; */
+    /* align-self: center; */
+    /* align-content: center; */
+    -moz-transform: scale(0.5);
+}
